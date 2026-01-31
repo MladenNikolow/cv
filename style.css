@@ -1,0 +1,795 @@
+/* Header modern layout */
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 8px 0;
+}
+
+.header-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact-info-wide {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 9pt;
+  color: rgba(255,255,255,0.85);
+  margin-top: 2px;
+  margin-bottom: 2px;
+  flex-wrap: wrap;
+}
+
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 2px;
+  transition: filter 0.2s;
+}
+.icon-link:hover .icon-img {
+  filter: none !important;
+}
+.icon-img {
+  width: 20px;
+  height: 20px;
+  filter: grayscale(1) brightness(0.5);
+  vertical-align: middle;
+  transition: filter 0.2s;
+}
+/* Modern Tech CV - Colorful & Professional */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --primary-color: #2563eb;
+  --primary-dark: #1e40af;
+  --accent-color: #06b6d4;
+  --success-color: #10b981;
+  --text-dark: #0f172a;
+  --text-medium: #334155;
+  --text-light: #64748b;
+  --bg-light: #f8fafc;
+  --bg-accent: #eff6ff;
+  --border-color: #e2e8f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@page { 
+  size: A4; 
+  margin: 12mm; 
+}
+
+html, body { 
+  height: 100%; 
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--text-dark);
+  font-size: 10pt;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 75%, #00f2fe 100%);
+  background-attachment: fixed;
+}
+
+/* Page container */
+.page {
+  max-width: 210mm;
+  min-height: 297mm;
+  margin: 20px auto;
+  padding: 0;
+  background: white;
+  box-shadow: 0 10px 60px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Header with gradient */
+.header {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+  color: white;
+  padding: 28px 40px;
+  margin-bottom: 0;
+}
+
+.header-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.header-info {
+  vertical-align: middle;
+  padding-right: 20px;
+}
+
+.header-photo-cell {
+  vertical-align: middle;
+  width: 100px;
+  text-align: right;
+}
+
+.profile-photo {
+  width: 90px !important;
+  height: 90px !important;
+  max-width: 90px !important;
+  max-height: 90px !important;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+}
+
+h1 {
+  font-size: 28pt;
+  font-weight: 800;
+  margin: 0 0 6px 0;
+  letter-spacing: -1px;
+  color: white;
+}
+
+.title-bar {
+  font-size: 11pt;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 10px;
+  letter-spacing: 0.2px;
+}
+
+.contact-info {
+  font-size: 9pt;
+  color: rgba(255, 255, 255, 0.85);
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 16px;
+}
+
+.contact-info span {
+  white-space: nowrap;
+}
+
+/* Summary Section */
+.summary-section {
+  background: var(--bg-accent);
+  padding: 20px 40px 16px 40px;
+  border-left: 4px solid var(--accent-color);
+  margin: 0;
+}
+
+.summary-divider {
+  margin-top: 16px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color), var(--success-color));
+  border-radius: 2px;
+}
+
+.summary {
+  font-size: 11pt;
+  line-height: 1.7;
+  color: var(--text-medium);
+  margin: 0;
+  font-weight: 400;
+}
+
+.summary strong {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* Container layout - now single column */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 600px;
+}
+
+/* Full-width sections */
+.section-full {
+  padding: 24px 40px;
+  border-top: 2px solid var(--border-color);
+  border-bottom: 2px solid var(--border-color);
+  margin-bottom: -2px; /* Overlap borders */
+}
+
+
+/* Section accent line and unique backgrounds */
+
+.section-full {
+  position: relative;
+  padding-left: 32px;
+  transition: background 0.5s cubic-bezier(.4,0,.2,1);
+  border-bottom: 2px solid #e0e7ef;
+}
+
+.section-full::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 18px;
+  bottom: 18px;
+  width: 6px;
+  border-radius: 6px;
+  opacity: 0.85;
+  transition: background 0.5s cubic-bezier(.4,0,.2,1);
+}
+
+.section-full.skills::before {
+  background: linear-gradient(180deg, #00bcd4, #4fd1c5);
+}
+.section-full.education::before {
+  background: linear-gradient(180deg, #a78bfa, #f472b6);
+}
+.section-full.projects::before {
+  background: linear-gradient(180deg, #fbbf24, #f59e42);
+}
+.section-full.languages::before {
+  background: linear-gradient(180deg, #38bdf8, #818cf8);
+}
+.section-full.experience::before {
+  background: linear-gradient(180deg, #6366f1, #06b6d4);
+}
+
+.section-full.skills {
+  background: #e0f7fa;
+}
+.section-full.education {
+  background: #f3e8ff;
+}
+.section-full.projects {
+  background: #fff7e6;
+}
+.section-full.languages {
+  background: #e6f7ff;
+}
+/* Professional Experience section - much darker background */
+/* Professional Experience section - lighter blue, slightly darker than original */
+/* Professional Experience section - even lighter blue */
+.section-full.experience {
+  background: #dbeafe;
+  color: #111827;
+}
+
+/* Summary section vertical line matches section style, but with unique color */
+/* Summary section - soft yellow for warmth and contrast */
+/* Summary section - subtle, non-intrusive light grayish blue */
+.summary-section {
+  position: relative;
+  background: #f4f6fa;
+  padding: 20px 40px 16px 40px;
+  margin: 0;
+  padding-left: 32px;
+}
+.summary-section::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 18px;
+  bottom: 18px;
+  width: 6px;
+  border-radius: 6px;
+  background: linear-gradient(180deg, #6366f1, #818cf8);
+  opacity: 0.85;
+}
+
+.section-full.skills {
+  background: #e0f7fa;
+}
+.section-full.education {
+  background: #f3e8ff;
+}
+.section-full.projects {
+  background: #fff7e6;
+}
+.section-full.languages {
+  background: #e6f7ff;
+}
+
+
+/* Grids for horizontal layouts */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.edu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.languages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* Section styling */
+.section {
+  margin-bottom: 28px;
+}
+
+.section-title {
+  font-size: 11pt;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Skills with tags */
+.skill-category {
+  margin-bottom: 12px;
+}
+
+.skill-cat-title {
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+  font-size: 9pt;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.skill-tag {
+  background: white;
+  color: var(--text-medium);
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 8.5pt;
+  font-weight: 500;
+  border: 1px solid var(--border-color);
+  transition: all 0.2s;
+}
+
+.skill-tag.primary {
+  background: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+  font-weight: 600;
+}
+
+.skill-tag.secondary {
+  background: #e0e7ff;
+  color: #2563eb;
+  border-color: #a5b4fc;
+  font-weight: 600;
+}
+
+.skill-tag:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Languages with bars */
+.lang-item {
+  margin-bottom: 0;
+  padding: 12px;
+  background: white;
+  border-radius: 8px;
+  border-left: 3px solid var(--success-color);
+}
+
+.lang-name {
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 6px;
+  font-size: 9pt;
+}
+
+.lang-level {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.level-bar {
+  height: 6px;
+  border-radius: 3px;
+  background: var(--border-color);
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.level-bar::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+  border-radius: 3px;
+}
+
+.level-bar.full::before {
+  width: 100%;
+}
+
+.level-bar.high::before {
+  width: 80%;
+}
+
+.level-bar.medium::before {
+  width: 60%;
+}
+
+.lang-level span {
+  font-size: 8pt;
+  color: var(--text-light);
+  min-width: 40px;
+  text-align: right;
+}
+
+/* Education in sidebar */
+.edu {
+  margin-bottom: 16px;
+  padding: 12px;
+  background: white;
+  border-radius: 8px;
+  border-left: 3px solid var(--accent-color);
+}
+
+.edu-title {
+  font-weight: 600;
+  color: var(--text-dark);
+  font-size: 9.5pt;
+  line-height: 1.3;
+  margin-bottom: 4px;
+}
+
+.edu-org {
+  color: var(--text-medium);
+  font-size: 8.5pt;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.edu-date {
+  color: var(--text-light);
+  font-size: 8pt;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.edu-details {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border-color);
+}
+
+.edu-focus {
+  font-size: 8pt;
+  color: var(--text-medium);
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.edu-courses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.course-tag {
+  display: inline-block;
+  background: var(--bg-accent);
+  color: var(--primary-color);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 7pt;
+  font-weight: 500;
+}
+
+.edu-certs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.cert-link {
+  font-size: 10pt;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.cert-link:hover {
+  transform: scale(1.2);
+}
+
+/* Jobs */
+.job {
+  margin-bottom: 28px;
+  page-break-inside: avoid;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.job:last-child {
+  border-bottom: none;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+  gap: 16px;
+}
+
+.job-title {
+  font-weight: 700;
+  font-size: 12pt;
+  color: var(--primary-color);
+  margin-bottom: 4px;
+}
+
+.job-company {
+  font-size: 10pt;
+  color: var(--text-medium);
+  font-weight: 600;
+}
+
+.job-date {
+  color: var(--text-light);
+  font-size: 9pt;
+  white-space: nowrap;
+  font-weight: 600;
+  background: var(--bg-light);
+  padding: 4px 12px;
+  border-radius: 12px;
+}
+
+.job-body ul {
+  margin: 12px 0 12px 20px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.job-body li {
+  margin-bottom: 8px;
+  color: var(--text-medium);
+  line-height: 1.6;
+  position: relative;
+  padding-left: 8px;
+}
+
+.job-body li::before {
+  content: '▸';
+  position: absolute;
+  left: -12px;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.tech-stack {
+  font-size: 8.5pt;
+  color: var(--text-light);
+  margin-top: 12px;
+  padding: 10px 14px;
+  background: var(--bg-light);
+  border-radius: 6px;
+  line-height: 1.5;
+  border-left: 3px solid var(--accent-color);
+}
+
+.tech-stack strong {
+  color: var(--text-medium);
+  font-weight: 600;
+}
+
+/* Timeline styling */
+.timeline {
+  position: relative;
+  padding-left: 20px;
+  margin: 12px 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, var(--primary-color), var(--accent-color));
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -20px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 0 0 2px var(--primary-color);
+}
+
+.timeline-content {
+  padding-left: 8px;
+}
+
+.timeline-role {
+  font-weight: 600;
+  font-size: 10pt;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+.timeline-content ul {
+  margin: 0 0 0 16px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.timeline-content li {
+  margin-bottom: 5px;
+  color: var(--text-medium);
+  line-height: 1.5;
+  position: relative;
+  padding-left: 8px;
+  font-size: 9.5pt;
+}
+
+.timeline-content li::before {
+  content: '▸';
+  position: absolute;
+  left: -10px;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.timeline-content a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.timeline-content a:hover {
+  text-decoration: underline;
+}
+
+/* Projects */
+.project {
+  margin-bottom: 0;
+  page-break-inside: avoid;
+  padding: 16px;
+  background: white;
+  border-radius: 8px;
+  border-left: 3px solid var(--success-color);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 6px;
+  gap: 12px;
+}
+
+.project-title {
+  font-weight: 700;
+  font-size: 11pt;
+  color: var(--text-dark);
+}
+
+.project-date {
+  color: var(--text-light);
+  font-size: 8.5pt;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.project-desc {
+  color: var(--text-medium);
+  font-size: 9.5pt;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.project .tech-stack {
+  background: white;
+  border-left-color: var(--success-color);
+  margin-top: 8px;
+}
+
+/* Print optimizations */
+@media print {
+  body { 
+    background: white !important;
+    color-adjust: exact; 
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  
+  .page {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  
+  .header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  
+  .job, .project {
+    page-break-inside: avoid;
+  }
+  
+  .skill-tag.primary {
+    background: var(--primary-color) !important;
+    color: white !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .skills-grid,
+  .edu-grid,
+  .projects-grid,
+  .languages-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .section-full {
+    padding: 20px;
+  }
+  
+  .job-header, .project-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  
+  .profile-photo {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  
+  .header-photo-cell {
+    width: 55px;
+  }
+}
