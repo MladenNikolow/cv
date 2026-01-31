@@ -767,6 +767,64 @@ h1 {
 
 /* Responsive */
 @media (max-width: 800px) {
+  .page {
+    margin: 0;
+    border-radius: 0;
+    min-height: auto;
+  }
+
+  .header {
+    padding: 20px 16px;
+  }
+
+  .header-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .header-info {
+    align-items: center;
+    order: 2;
+  }
+
+  .header-info h1 {
+    font-size: 20pt;
+  }
+
+  .header-info .title-bar {
+    font-size: 10pt;
+  }
+
+  .header-photo-cell {
+    order: 1;
+    width: 80px !important;
+  }
+
+  .header-photo-cell img {
+    width: 75px !important;
+    height: 75px !important;
+  }
+
+  .contact-info-wide {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-size: 8.5pt;
+  }
+
+  .contact-info-wide > span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .contact-info-wide > span:last-child {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
   .skills-grid,
   .edu-grid,
   .projects-grid,
@@ -775,7 +833,8 @@ h1 {
   }
   
   .section-full {
-    padding: 20px;
+    padding: 16px;
+    padding-left: 24px;
   }
   
   .job-header, .project-header {
@@ -788,8 +847,13 @@ h1 {
     width: 50px !important;
     height: 50px !important;
   }
-  
-  .header-photo-cell {
-    width: 55px;
+
+  .summary-section {
+    padding: 16px;
+    padding-left: 24px;
+  }
+
+  .timeline {
+    padding-left: 12px;
   }
 }
