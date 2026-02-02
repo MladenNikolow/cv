@@ -297,8 +297,9 @@ h1 {
 /* Grids for horizontal layouts */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px 24px;
+  align-items: start;
 }
 
 .edu-grid {
@@ -338,16 +339,22 @@ h1 {
 
 /* Skills with tags */
 .skill-category {
-  margin-bottom: 12px;
+  margin-bottom: 0;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  border: 1px solid rgba(37, 99, 235, 0.1);
 }
 
 .skill-cat-title {
-  font-weight: 600;
-  color: var(--text-dark);
-  margin-bottom: 8px;
-  font-size: 9pt;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin-bottom: 10px;
+  font-size: 8.5pt;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.6px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--primary-color);
 }
 
 .skill-tags {
@@ -836,7 +843,7 @@ h1 {
   .skills-grid {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
   }
 
   .skills-grid .skill-category {
@@ -844,18 +851,31 @@ h1 {
     flex-wrap: wrap;
     align-items: center;
     gap: 8px;
+    padding: 10px 12px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
   }
 
   .skills-grid .skill-cat-title {
     margin-bottom: 0;
-    margin-right: 8px;
-    white-space: nowrap;
+    margin-right: 6px;
+    padding-bottom: 0;
+    border-bottom: none;
+    font-size: 8pt;
+    min-width: fit-content;
+    flex-shrink: 0;
   }
 
   .skills-grid .skill-tags {
     display: inline-flex;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 5px;
+    flex: 1;
+  }
+
+  .skills-grid .skill-tag {
+    padding: 3px 8px;
+    font-size: 8pt;
   }
 
   .edu-grid,
