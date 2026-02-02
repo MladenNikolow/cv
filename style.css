@@ -833,7 +833,31 @@ h1 {
     margin-right: 0 !important;
   }
 
-  .skills-grid,
+  .skills-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .skills-grid .skill-category {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .skills-grid .skill-cat-title {
+    margin-bottom: 0;
+    margin-right: 8px;
+    white-space: nowrap;
+  }
+
+  .skills-grid .skill-tags {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
   .edu-grid,
   .projects-grid,
   .languages-grid {
