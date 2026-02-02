@@ -3,39 +3,52 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Mladen Nikolov — CV</title>
+  <title>Mladen Nikolov - CV</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="page">
-    <div class="header">
-      <div class="header-flex">
-        <div class="header-info">
-          <h1>Mladen Nikolov</h1>
-          <div class="title-bar">Senior Firmware Developer</div>
+    <header class="header" role="banner">
+      <div class="header-grid">
+        <div class="header-photo-wrapper">
+          <img class="header-photo" src="photo.jpg" alt="Profile photo of Mladen Nikolov">
         </div>
-        <div class="header-photo-cell" style="width: 100px;">
-          <img src="photo.jpg" alt="Mladen Nikolov" style="width: 95px; height: 95px; border-radius: 50%; object-fit: cover; object-position: center 20%; border: 3px solid rgba(255,255,255,0.6); box-shadow: 0 3px 15px rgba(0,0,0,0.3);">
+        <div class="header-content">
+          <div class="header-info">
+            <h1>Mladen Nikolov</h1>
+            <p class="title-bar">Senior Firmware Developer</p>
+          </div>
+          <address class="contact-info" aria-label="Contact information">
+            <a class="contact-item" href="mailto:mladen.nikolow@gmail.com" aria-label="Email">
+              <span class="contact-icon" aria-hidden="true">✉</span>
+              <span>mladen.nikolow@gmail.com</span>
+            </a>
+            <a class="contact-item" href="tel:+359884139349" aria-label="Phone">
+              <span class="contact-icon" aria-hidden="true">📱</span>
+              <span>+359 884 139 349</span>
+            </a>
+            <span class="contact-item" aria-label="Location">
+              <span class="contact-icon" aria-hidden="true">📍</span>
+              <span>Varna, Bulgaria</span>
+            </span>
+          </address>
+          <nav class="header-social" aria-label="Social media links">
+            <a href="https://www.linkedin.com/in/mladen-nikolov-23264a169/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn profile">
+              <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="" class="social-icon">
+              <span class="social-label">LinkedIn</span>
+            </a>
+            <a href="https://github.com/MladenNikolow" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub profile">
+              <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="" class="social-icon">
+              <span class="social-label">GitHub</span>
+            </a>
+          </nav>
         </div>
       </div>
-      <div class="contact-info contact-info-wide">
-        <span>✉ <a href="mailto:mladen.nikolow@gmail.com" style="color:inherit;text-decoration:underline;">mladen.nikolow@gmail.com</a></span>
-        <span>📱 <a href="tel:+359884139349" style="color:inherit;text-decoration:underline;">+359 884 139 349</a></span>
-        <span>📍 Varna, Bulgaria</span>
-        <span style="margin-left:auto; margin-right:40px; display:inline-flex; gap:12px; align-items:center;">
-          <a href="https://www.linkedin.com/in/mladen-nikolov-23264a169/" target="_blank" class="icon-link" title="LinkedIn">
-            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" class="icon-img">
-          </a>
-          <a href="https://github.com/MladenNikolow" target="_blank" class="icon-link" title="GitHub">
-            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" class="icon-img">
-          </a>
-        </span>
-      </div>
-    </div>
+    </header>
 
     <div class="summary-section">
       <p class="summary">
-        Software development, embedded systems, and electronics - 6+ years building and exploring - from firmware to full-stack. Always curious, always creating.
+        Passionate embedded, electronics & automation technologist with 6+ years from low-level firmware to full-stack development. I build smart devices, prototype fast, and love tough problems - tech is my playground.
       </p>
       <div class="summary-divider"></div>
     </div>
@@ -193,7 +206,7 @@
           </div>
           <div class="job-body">
             <ul>
-              <li>Certified LEGO Robotics Teacher — taught programming and robotics to students</li>
+              <li>Certified LEGO Robotics Teacher - taught programming and robotics to students</li>
               <li>Participated in training activities and public demonstrations</li>
             </ul>
           </div>
@@ -274,6 +287,18 @@
               <span class="skill-tag">Jenkins</span>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- Soft Skills -->
+      <section class="section-full soft-skills">
+        <h3 class="section-title">🤝 Soft Skills</h3>
+        <div class="skill-tags">
+          <span class="skill-tag primary">Agile/Scrum</span>
+          <span class="skill-tag primary">Team Leadership</span>
+          <span class="skill-tag">Mentoring</span>
+          <span class="skill-tag">Technical Training</span>
+          <span class="skill-tag">Cross-team Collaboration</span>
         </div>
       </section>
 
@@ -382,6 +407,19 @@
               </div>
               <div class="project-desc">Platform for reporting sea pollution and tracking cleanup efforts. Developed as part of the LIDL "You and Me" programme supporting environmental initiatives.</div>
               <div class="tech-stack">.NET MVC · MSSQL · MongoDB · Azure</div>
+            </div>
+
+            <div class="project">
+              <div class="project-header">
+                <div class="project-title">Arduino UNO Moisture System
+                  <a href="https://github.com/MladenNikolow/Arduino-UNO-Moisture-System" target="_blank" class="icon-link" title="GitHub Repo" style="margin-left:8px;vertical-align:middle;">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" class="icon-img" style="width:16px;height:16px;filter:none;">
+                  </a>
+                </div>
+                <div class="project-date">2020</div>
+              </div>
+              <div class="project-desc">Soil moisture monitoring system using Arduino UNO with real-time LCD display and LED indicators. Features direct register manipulation, hardware timers, interrupts, and I2C communication for efficient performance.</div>
+              <div class="tech-stack">C/C++ · Arduino · ATmega328P · I2C · ADC · Timers/Interrupts</div>
             </div>
         </div>
       </section>
