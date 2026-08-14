@@ -3,463 +3,588 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Mladen Nikolov - CV</title>
+
+  <title>Mladen Nikolov - Senior Firmware Developer</title>
+  <meta name="description" content="Mladen Nikolov - embedded software engineer in Varna, Bulgaria. 6+ years building devices end to end: the firmware that runs them and the web interfaces used to control them. C, Python and React." />
+  <meta name="author" content="Mladen Nikolov" />
+  <link rel="canonical" href="https://mladennikolow.github.io/cv/" />
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Mladen Nikolov - Senior Firmware Developer" />
+  <meta property="og:description" content="Embedded software engineer with 6+ years building devices end to end - the firmware that runs them and the web interfaces used to control them." />
+  <meta property="og:url" content="https://mladennikolow.github.io/cv/" />
+  <meta property="og:image" content="https://mladennikolow.github.io/cv/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="profile:first_name" content="Mladen" />
+  <meta property="profile:last_name" content="Nikolov" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mladen Nikolov - Senior Firmware Developer" />
+  <meta name="twitter:description" content="Embedded software engineer building devices end to end - the firmware that runs them and the web interfaces used to control them." />
+  <meta name="twitter:image" content="https://mladennikolow.github.io/cv/og-image.png" />
+
+  <!-- Icons -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="favicon.png" type="image/png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <meta name="theme-color" content="#0f2557" />
+
+  <!-- Fonts: link (not @import) so the stylesheet can start fetching in parallel -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+
   <link rel="stylesheet" href="style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mladen Nikolov",
+    "jobTitle": "Senior Firmware Developer",
+    "email": "mailto:mladen.nikolow@gmail.com",
+    "telephone": "+359884139349",
+    "url": "https://mladennikolow.github.io/cv/",
+    "image": "https://mladennikolow.github.io/cv/photo.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Varna",
+      "addressCountry": "BG"
+    },
+    "worksFor": { "@type": "Organization", "name": "Hilscher", "url": "https://www.hilscher.com" },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "Technical University of Varna", "url": "https://www.tu-varna.bg/" },
+      { "@type": "EducationalOrganization", "name": "Software University (SoftUni)", "url": "https://softuni.bg/" }
+    ],
+    "knowsLanguage": ["bg", "en", "es"],
+    "knowsAbout": [
+      "Embedded systems", "Firmware development", "ARM Cortex-M", "STM32", "FreeRTOS",
+      "Secure boot", "IO-Link", "PROFINET", "EtherCAT", "EtherNet/IP", "OPC UA", "MQTT",
+      "C", "C++", "Python", "React"
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/mladen-nikolov-23264a169/",
+      "https://github.com/MladenNikolow"
+    ]
+  }
+  </script>
 </head>
 <body>
+
+  <!-- Inline icon sprite: no external CDN, works offline and in print -->
+  <svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.2 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-printer" viewBox="0 0 24 24"><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 9V3h12v6"/><rect x="6" y="14" width="12" height="8" rx="1"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3.5 3 8.5 3 12 0v-5"/><path d="M22 10v6"/></symbol>
+    <symbol id="i-package" viewBox="0 0 24 24"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/><path d="m7.5 4.27 9 5.15"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10Z"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13M7.12 20.45H3.55V9h3.57zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <div class="page">
+
     <header class="header" role="banner">
       <div class="header-grid">
-        <div class="header-photo-wrapper">
-          <img class="header-photo" src="photo.jpg" alt="Profile photo of Mladen Nikolov">
-        </div>
+        <img class="header-photo" src="photo.jpg" width="413" height="531" alt="Portrait of Mladen Nikolov">
+
         <div class="header-content">
           <div class="header-info">
             <h1>Mladen Nikolov</h1>
-            <p class="title-bar">Senior Firmware Developer · 28 years old</p>
+            <p class="title-bar">Senior Firmware Developer</p>
+            <p class="title-sub">Embedded Systems · Industrial IoT · Full-Stack</p>
           </div>
+
           <address class="contact-info" aria-label="Contact information">
-            <a class="contact-item" href="mailto:mladen.nikolow@gmail.com" aria-label="Email">
-              <span class="contact-icon" aria-hidden="true">✉</span>
+            <a class="contact-item" href="mailto:mladen.nikolow@gmail.com">
+              <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
               <span>mladen.nikolow@gmail.com</span>
             </a>
-            <a class="contact-item" href="tel:+359884139349" aria-label="Phone">
-              <span class="contact-icon" aria-hidden="true">📱</span>
+            <a class="contact-item" href="tel:+359884139349">
+              <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
               <span>+359 884 139 349</span>
             </a>
-            <span class="contact-item" aria-label="Location">
-              <span class="contact-icon" aria-hidden="true">📍</span>
+            <span class="contact-item">
+              <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
               <span>Varna, Bulgaria</span>
             </span>
           </address>
-          <nav class="header-social" aria-label="Social media links">
-            <a href="https://www.linkedin.com/in/mladen-nikolov-23264a169/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn profile">
-              <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="" class="social-icon">
-              <span class="social-label">LinkedIn</span>
+
+          <nav class="header-actions" aria-label="Profiles and actions">
+            <a href="https://www.linkedin.com/in/mladen-nikolov-23264a169/" target="_blank" rel="noopener noreferrer" class="social-link">
+              <svg class="icon icon-solid" aria-hidden="true"><use href="#i-linkedin"/></svg>
+              <span>LinkedIn</span>
             </a>
-            <a href="https://github.com/MladenNikolow" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub profile">
-              <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="" class="social-icon">
-              <span class="social-label">GitHub</span>
+            <a href="https://github.com/MladenNikolow" target="_blank" rel="noopener noreferrer" class="social-link">
+              <svg class="icon icon-solid" aria-hidden="true"><use href="#i-github"/></svg>
+              <span>GitHub</span>
             </a>
+            <button type="button" class="print-btn" onclick="window.print()">
+              <svg class="icon" aria-hidden="true"><use href="#i-printer"/></svg>
+              <span>Download PDF</span>
+            </button>
           </nav>
         </div>
       </div>
     </header>
 
-    <div class="summary-section">
+    <section class="summary-section" aria-label="Profile summary">
       <p class="summary">
-        Passionate software engineer focused on embedded systems and electronics with 6+ years from low-level firmware to full-stack development. I build smart devices, prototype fast, and love tough problems - tech is my playground.
+        Embedded software engineer with <strong>6+ years</strong> building industrial devices end to end - the
+        firmware that runs them, the security and testing that keep them reliable, and the web interfaces used to
+        control them. Currently developing device firmware at Hilscher in C, Python and React, and shipping a
+        commercial device of my own. Earlier work spans core banking systems and semiconductor manufacturing
+        equipment.
       </p>
-      <div class="summary-divider"></div>
-    </div>
+      <ul class="stats" aria-label="Career highlights">
+        <li><span class="stat-value">6+</span><span class="stat-label">Years in production software</span></li>
+        <li><span class="stat-value">3</span><span class="stat-label">Industries: automation, banking, semiconductor</span></li>
+        <li><span class="stat-value">5</span><span class="stat-label">Engineers &amp; analysts led</span></li>
+        <li><span class="stat-value">4</span><span class="stat-label">Banks using systems my team delivered</span></li>
+        <li><span class="stat-value">4</span><span class="stat-label">MCU / SoC platforms built on</span></li>
+        <li><span class="stat-value">5</span><span class="stat-label">Languages used in production</span></li>
+      </ul>
+    </section>
 
-    <div class="container">
-      <!-- Professional Experience - Most Important -->
-      <section class="section-full experience">
-        <h3 class="section-title">💼 Professional Experience</h3>
+    <main class="container" id="main">
 
-        <div class="job">
-          <div class="job-header"> 
+      <!-- ============ EXPERIENCE ============ -->
+      <section class="section-full experience" aria-labelledby="h-experience">
+        <h2 class="section-title" id="h-experience">
+          <span class="section-icon"><svg class="icon" aria-hidden="true"><use href="#i-briefcase"/></svg></span>
+          <span>Professional Experience</span>
+        </h2>
+
+        <article class="job">
+          <div class="job-header">
             <div>
-              <div class="job-title">Application Firmware Developer</div>
-              <div class="job-company"><a href="https://www.hilscher.com" target="_blank">Hilscher</a> · Varna, Bulgaria</div>
+              <h3 class="job-title">Application Firmware Developer</h3>
+              <p class="job-company"><a href="https://www.hilscher.com" target="_blank" rel="noopener noreferrer">Hilscher</a> · Varna, Bulgaria</p>
             </div>
-            <div class="job-date">Apr 2024 – Present</div>
+            <p class="job-date">Apr 2024 – Present</p>
           </div>
           <div class="job-body">
             <div class="timeline">
-                <div class="timeline-item">
-                  <div class="timeline-marker"></div>
-                  <div class="timeline-content">
-                    <div class="timeline-role">Onboarding & Education</div>
-                    <ul>
-                      <li>Completed intensive onboarding program focused on ARM Cortex-M microcontrollers and STM32 platform</li>
-                      <li>Studied:
-                        <a href="https://github.com/arm-university/Fundamentals-of-System-on-Chip-Design-on-Arm-Cortex-M-Microcontrollers" target="_blank">Fundamentals of System-on-Chip Design on Arm Cortex-M Microcontrollers</a>
-                        <span style="color: #888; margin: 0 8px;">|</span>
-                        <a href="https://www.scribd.com/document/567413628/Mastering-stm32-book-2nd-edition" target="_blank">Mastering STM32: A step-by-step guide to the most complete ARM Cortex-M platform</a>
-                      </li>
-                    </ul>
-                  </div>
+              <div class="timeline-item">
+                <span class="timeline-marker" aria-hidden="true"></span>
+                <div class="timeline-content">
+                  <h4 class="timeline-role">Product Firmware - WAGO IO-Link line</h4>
+                  <ul>
+                    <li>Deliver full-lifecycle firmware for <a href="https://www.wago.com" target="_blank" rel="noopener noreferrer">WAGO</a>'s <a href="https://www.wago.com/global/i-o-systems/io-link" target="_blank" rel="noopener noreferrer">IO-Link</a> industrial product line, spanning C, Python and JavaScript/React</li>
+                    <li>Design and maintain high-availability services for real-time data acquisition, signal processing and diagnostics</li>
+                    <li>Integrate industrial Ethernet protocol stacks - PROFINET, EtherNet/IP and EtherCAT</li>
+                    <li>Built a React web console and on-device REST API, enabling remote configuration and monitoring</li>
+                    <li>Implemented MQTT and OPC UA connectivity for industrial and cloud data exchange</li>
+                    <li>Integrated the TMG IO-Link Device Tool over UDP for device configuration and diagnostics, and ported the firmware to additional hardware variants</li>
+                  </ul>
                 </div>
-                <div class="timeline-item">
-                  <div class="timeline-marker"></div>
-                  <div class="timeline-content">
-                    <div class="timeline-role">Embedded Engineer (Drivers)</div>
-                    <ul>
-                      <li>Development and maintenance of drivers for <a href="https://www.hilscher.com/products/multiprotocol-socs-stacks/multiprotocol-socs/netx-90" target="_blank">netX90</a></li>
-                      <li>Designed unified UART API and built automated Python-based testing framework for all drivers</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="timeline-item">
-                  <div class="timeline-marker"></div>
-                  <div class="timeline-content">
-                    <div class="timeline-role">Custom Application Firmware Engineer</div>
-                    <ul>
-                      <li>Developing software for <a href="https://www.wago.com" target="_blank">WAGO</a>'s <a href="https://www.wago.com/global/i-o-systems/io-link" target="_blank">IO-Link</a> industrial product line – full lifecycle development using C, Python, and JavaScript/React</li>
-                      <li>Developed and maintained high-availability services with real-time data acquisition, signal processing, and diagnostics</li>
-                      <li>Integrated with multiple network protocol stacks: PROFINET, EtherNet/IP, and EtherCAT (TCP/IP-based industrial Ethernet)</li>
-                      <li>Built React-based web UI and REST API served from the platform, enabling remote configuration and monitoring</li>
-                      <li>Implemented MQTT and OPC UA connectivity for cloud-ready data exchange</li>
-                      <li>Integrated TMG IO-Link Device Tool via UDP socket communication for device configuration and diagnostics</li>
-                      <li>Ported software to new hardware variants; designed inter-service communication layers</li>
-                      <li>Configured CI/CD pipeline with Docker and automated C Unity testing</li>
-                    </ul>
-                  </div>
-                </div>
-            </div>
-            <div class="tech-stack"><strong>Tech:</strong> C/C++, Python, React, ARM Assembly, FreeRTOS, Profinet, Ethernet/IP, EtherCAT, MQTT, IO‑Link, OPC UA</div>
-          </div>
-        </div>
+              </div>
 
-        <div class="job">
+              <div class="timeline-item">
+                <span class="timeline-marker" aria-hidden="true"></span>
+                <div class="timeline-content">
+                  <h4 class="timeline-role">Platform &amp; Security - netX 90 / STM32</h4>
+                  <ul>
+                    <li>Develop and maintain device drivers for the <a href="https://www.hilscher.com/products/multiprotocol-socs-stacks/multiprotocol-socs/netx-90" target="_blank" rel="noopener noreferrer">netX 90</a> multiprotocol SoC</li>
+                    <li>Designed a unified UART API and an automated Python test framework covering the full driver suite</li>
+                    <li>Designed the onboard netX 90 ↔ STM32 UART link, giving both processors a reliable channel for coordinated services</li>
+                    <li>Implemented secure boot to authenticate firmware at startup and protect the platform against unauthorised or tampered images</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <span class="timeline-marker" aria-hidden="true"></span>
+                <div class="timeline-content">
+                  <h4 class="timeline-role">Engineering Practice</h4>
+                  <ul>
+                    <li>Established a CI/CD pipeline with Docker and automated C Unity tests</li>
+                    <li>Integrated JFrog, SBOM generation, Dependency-Track and DefectDojo for artifact management, component inventory and vulnerability tracking</li>
+                    <li>Apply AI tooling across implementation, code review and debugging, and AI-assisted test generation in verification - improving coverage and cutting turnaround time</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <p class="tech-stack"><strong>Tech:</strong> C/C++ · Python · React · ARM Assembly · FreeRTOS · Secure Boot · PROFINET · EtherNet/IP · EtherCAT · MQTT · IO-Link · OPC UA · Docker</p>
+          </div>
+        </article>
+
+        <article class="job">
           <div class="job-header">
             <div>
-              <div class="job-title">C/C++ Developer</div>
-              <div class="job-company"><a href="https://www.strypes.eu" target="_blank">Strypes</a> · Remote</div>
+              <h3 class="job-title">C/C++ Developer</h3>
+              <p class="job-company"><a href="https://www.strypes.eu" target="_blank" rel="noopener noreferrer">Strypes</a> · Remote</p>
             </div>
-            <div class="job-date">Sep 2023 – May 2024</div>
+            <p class="job-date">Sep 2023 – May 2024</p>
           </div>
           <div class="job-body">
             <ul>
-              <li>Developed OS components for ASML lithography machines</li>
-              <li>Worked on mission-critical systems for semiconductor manufacturing equipment</li>
+              <li>Developed operating-system components for ASML lithography machines</li>
+              <li>Worked on mission-critical systems for semiconductor manufacturing equipment, under strict review and release processes</li>
             </ul>
-            <div class="tech-stack"><strong>Tech:</strong> C/C++, Python, Bash, Linux (Red Hat/Wind River), Jenkins, Git</div>
+            <p class="tech-stack"><strong>Tech:</strong> C/C++ · Python · Bash · Linux (Red Hat / Wind River) · Jenkins · Git</p>
           </div>
-        </div>
+        </article>
 
-        <div class="job">
+        <article class="job">
           <div class="job-header">
             <div>
-              <div class="job-title">Lead C++ Developer</div>
-              <div class="job-company"><a href="https://www.csoft.bg" target="_blank">CSoft</a> · Varna, Bulgaria</div>
+              <h3 class="job-title">Lead C++ Developer</h3>
+              <p class="job-company"><a href="https://www.csoft.bg" target="_blank" rel="noopener noreferrer">CSoft</a> · Varna, Bulgaria</p>
             </div>
-            <div class="job-date">Mar 2020 – Sep 2023</div>
+            <p class="job-date">Mar 2020 – Sep 2023</p>
           </div>
           <div class="job-body">
             <div class="timeline">
-                <div class="timeline-item">
-                  <div class="timeline-marker"></div>
-                  <div class="timeline-content">
-                    <div class="timeline-role">Intern</div>
-                    <div class="timeline-period">Mar 2020</div>
-                    <ul>
-                      <li>Completed internship and recognized as top candidate</li>
-                      <li>Advanced to Junior Specialist role upon successful completion</li>
-                    </ul>
-                  </div>
+              <div class="timeline-item">
+                <span class="timeline-marker" aria-hidden="true"></span>
+                <div class="timeline-content">
+                  <h4 class="timeline-role">Lead Developer <span class="timeline-period">2022 – Sep 2023</span></h4>
+                  <ul>
+                    <li>Led the technical work of a team of 3 programmers and 2 business analysts</li>
+                    <li>Delivered and maintained core banking systems for major Bulgarian banks - Postbank, TBI (BG/GR/RO), International Asset Bank and Bulgarian Development Bank</li>
+                    <li>Built desktop applications, web and mobile banking, and integrations with SAP, IBM Safer Payments and Evrotrust</li>
+                  </ul>
                 </div>
-                <div class="timeline-item">
-                  <div class="timeline-marker"></div>
-                  <div class="timeline-content">
-                    <div class="timeline-role">Junior Specialist (C++ Developer)</div>
-                    <div class="timeline-period">2020 – 2022</div>
-                    <ul>
-                      <li>Developed and maintained software for core banking systems</li>
-                      <li>Worked on desktop applications, web and mobile banking solutions</li>
-                      <li>Integration with external systems such as SAP and IBM Safer Payments</li>
-                    </ul>
-                  </div>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-marker" aria-hidden="true"></span>
+                <div class="timeline-content">
+                  <h4 class="timeline-role">Junior Specialist, C++ Developer <span class="timeline-period">2020 – 2022</span></h4>
+                  <ul>
+                    <li>Developed and maintained software for core banking systems</li>
+                    <li>Worked across desktop applications and web and mobile banking solutions</li>
+                    <li>Built integrations with external systems such as SAP and IBM Safer Payments</li>
+                  </ul>
                 </div>
-                <div class="timeline-item">
-                  <div class="timeline-marker"></div>
-                  <div class="timeline-content">
-                    <div class="timeline-role">Lead Developer</div>
-                    <div class="timeline-period">2022 – Sep 2023</div>
-                    <ul>
-                      <li>Led technical work of a team comprising 3 programmers and 2 business analysts</li>
-                      <li>Developed and maintained core banking systems for major Bulgarian banks (Postbank, TBI BG/GR/RO, International Asset Bank, Bulgarian Development Bank)</li>
-                      <li>Built desktop apps, web/mobile banking, and integrations with SAP, IBM Safer Payments, and Evrotrust</li>
-                    </ul>
-                  </div>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-marker" aria-hidden="true"></span>
+                <div class="timeline-content">
+                  <h4 class="timeline-role">Intern <span class="timeline-period">Mar 2020</span></h4>
+                  <ul>
+                    <li>Ranked top candidate of the intake and promoted to Junior Specialist on completion</li>
+                  </ul>
                 </div>
+              </div>
             </div>
-            <div class="tech-stack"><strong>Tech:</strong> C++, MFC, Microsoft SQL, C#, .NET Web APIs, SOAP, REST</div>
+            <p class="tech-stack"><strong>Tech:</strong> C++ · MFC · Microsoft SQL · C# · .NET Web APIs · SOAP · REST</p>
           </div>
-        </div>
+        </article>
 
-        <div class="job">
-          <div class="job-header">
-            <div>
-              <div class="job-title">Marketing Trainee</div>
-              <div class="job-company"><a href="https://www.icard.com" target="_blank">iCard</a> · Varna, Bulgaria</div>
-            </div>
-            <div class="job-date">Jun 2018 – Sep 2018</div>
-          </div>
-          <div class="job-body">
-            <ul>
-              <li>Developed social media presence for the iCard digital wallet</li>
-              <li>Organized company teambuilding events</li>
-              <li>Collaborated with Marketing Manager on iCard × Startup Weekend Varna partnership</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="job">
-          <div class="job-header">
-            <div>
-              <div class="job-title">LEGO Robotics Teacher</div>
-              <div class="job-company">Robopartans OOD · Varna, Bulgaria</div>
-            </div>
-            <div class="job-date">Jun 2017 – Jan 2018</div>
-          </div>
-          <div class="job-body">
-            <ul>
-              <li>Certified LEGO Robotics Teacher - taught programming and robotics to students</li>
-              <li>Participated in training activities and public demonstrations</li>
-            </ul>
-          </div>
-        </div>
+        <article class="job">
+          <h3 class="earlier-title">Earlier</h3>
+          <ul class="earlier-list">
+            <li>
+              <span class="earlier-role">Marketing Trainee</span>
+              <span class="earlier-org">· <a href="https://www.icard.com" target="_blank" rel="noopener noreferrer">iCard</a>, Varna</span>
+              <span class="earlier-date">Jun – Sep 2018</span>
+              <span class="earlier-desc">Grew the social presence of the iCard digital wallet and ran the iCard × Startup Weekend Varna partnership.</span>
+            </li>
+            <li>
+              <span class="earlier-role">LEGO Robotics Teacher</span>
+              <span class="earlier-org">· Robopartans OOD, Varna</span>
+              <span class="earlier-date">Jun 2017 – Jan 2018</span>
+              <span class="earlier-desc">Certified instructor teaching programming and robotics; led training sessions and public demonstrations.</span>
+            </li>
+          </ul>
+        </article>
       </section>
 
-      <!-- Technical Skills -->
-      <section class="section-full skills">
-        <h3 class="section-title">💻 Technical Skills</h3>
-        <div class="skills-legend">
-          <span class="legend-item"><span class="legend-dot primary"></span> Primary Skill</span>
-          <span class="legend-item"><span class="legend-dot secondary"></span> Secondary Skill</span>
-        </div>
+      <!-- ============ TECHNICAL SKILLS ============ -->
+      <section class="section-full skills" aria-labelledby="h-skills">
+        <h2 class="section-title" id="h-skills">
+          <span class="section-icon"><svg class="icon" aria-hidden="true"><use href="#i-cpu"/></svg></span>
+          <span>Technical Skills</span>
+        </h2>
+
+        <p class="skills-legend">
+          <span class="legend-item"><span class="legend-dot primary" aria-hidden="true"></span> Core strength</span>
+          <span class="legend-item"><span class="legend-dot secondary" aria-hidden="true"></span> Proficient</span>
+        </p>
+
         <div class="skills-grid">
           <div class="skill-category">
-            <div class="skill-cat-title">Core Languages</div>
-            <div class="skill-tags">
-              <span class="skill-tag primary">C/C++</span>
-              <span class="skill-tag primary">Python</span>
-              <span class="skill-tag primary">C#</span>
-              <span class="skill-tag">JavaScript</span>
-              <span class="skill-tag">Bash/PowerShell</span>
-            </div>
+            <h3 class="skill-cat-title">Languages</h3>
+            <ul class="skill-tags">
+              <li class="skill-tag primary">C / C++</li>
+              <li class="skill-tag primary">Python</li>
+              <li class="skill-tag primary">C#</li>
+              <li class="skill-tag">JavaScript</li>
+              <li class="skill-tag">ARM Assembly</li>
+            </ul>
           </div>
+
           <div class="skill-category">
-            <div class="skill-cat-title">Embedded Systems</div>
-            <div class="skill-tags">
-              <span class="skill-tag primary">ARM Cortex-M</span>
-              <span class="skill-tag primary">FreeRTOS</span>
-              <span class="skill-tag primary">ESP32</span>
-              <span class="skill-tag">UART</span>
-              <span class="skill-tag">I2C</span>
-              <span class="skill-tag">SPI</span>
-              <span class="skill-tag">Raspberry Pi</span>
-              <span class="skill-tag">Arduino</span>
-            </div>
+            <h3 class="skill-cat-title">Embedded &amp; Real-Time</h3>
+            <ul class="skill-tags">
+              <li class="skill-tag primary">ARM Cortex-M</li>
+              <li class="skill-tag primary">STM32</li>
+              <li class="skill-tag primary">netX 90</li>
+              <li class="skill-tag primary">ESP32</li>
+              <li class="skill-tag primary">FreeRTOS</li>
+              <li class="skill-tag">UART</li>
+              <li class="skill-tag">I²C</li>
+              <li class="skill-tag">SPI</li>
+              <li class="skill-tag">Raspberry Pi</li>
+              <li class="skill-tag">Arduino</li>
+            </ul>
           </div>
+
           <div class="skill-category">
-            <div class="skill-cat-title">Protocols</div>
-            <div class="skill-tags">
-              <span class="skill-tag primary">OPC UA</span>
-              <span class="skill-tag primary">MQTT</span>
-              <span class="skill-tag primary">IO-Link</span>
-              <span class="skill-tag">Profinet</span>
-              <span class="skill-tag">Ethernet/IP</span>
-              <span class="skill-tag">EtherCAT</span>
-            </div>
+            <h3 class="skill-cat-title">Industrial Communication</h3>
+            <ul class="skill-tags">
+              <li class="skill-tag primary">IO-Link</li>
+              <li class="skill-tag primary">OPC UA</li>
+              <li class="skill-tag primary">MQTT</li>
+              <li class="skill-tag">PROFINET</li>
+              <li class="skill-tag">EtherNet/IP</li>
+              <li class="skill-tag">EtherCAT</li>
+            </ul>
           </div>
+
           <div class="skill-category">
-            <div class="skill-cat-title">Backend & Databases</div>
-            <div class="skill-tags">
-              <span class="skill-tag primary">.NET Core</span>
-              <span class="skill-tag primary">MS SQL</span>
-              <span class="skill-tag">PostgreSQL</span>
-              <span class="skill-tag">MongoDB</span>
-            </div>
+            <h3 class="skill-cat-title">Backend, Data &amp; UI</h3>
+            <ul class="skill-tags">
+              <li class="skill-tag primary">React</li>
+              <li class="skill-tag primary">.NET Core</li>
+              <li class="skill-tag primary">MS SQL</li>
+              <li class="skill-tag primary">REST APIs</li>
+              <li class="skill-tag">MFC</li>
+              <li class="skill-tag">PostgreSQL</li>
+              <li class="skill-tag">MongoDB</li>
+              <li class="skill-tag">Redux</li>
+              <li class="skill-tag">Vite</li>
+            </ul>
           </div>
+
           <div class="skill-category">
-            <div class="skill-cat-title">UI</div>
-            <div class="skill-tags">
-              <span class="skill-tag primary">React</span>
-              <span class="skill-tag primary">MFC</span>
-              <span class="skill-tag">Redux</span>
-              <span class="skill-tag">Vite</span>
-            </div>
+            <h3 class="skill-cat-title">Build, CI &amp; Tooling</h3>
+            <ul class="skill-tags">
+              <li class="skill-tag primary">Git</li>
+              <li class="skill-tag primary">Docker</li>
+              <li class="skill-tag primary">Wireshark</li>
+              <li class="skill-tag">CMake</li>
+              <li class="skill-tag">Jenkins</li>
+              <li class="skill-tag">Bash / PowerShell</li>
+              <li class="skill-tag">Azure</li>
+              <li class="skill-tag">SVN</li>
+              <li class="skill-tag">TFS</li>
+              <li class="skill-tag">ClearCase</li>
+            </ul>
           </div>
+
           <div class="skill-category">
-            <div class="skill-cat-title">Version Control</div>
-            <div class="skill-tags">
-              <span class="skill-tag primary">Git</span>
-              <span class="skill-tag">SVN</span>
-              <span class="skill-tag">TFS</span>
-              <span class="skill-tag">ClearCase</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <div class="skill-cat-title">Other Tools</div>
-            <div class="skill-tags">
-              <span class="skill-tag primary">Wireshark</span>
-              <span class="skill-tag primary">WAF</span>
-              <span class="skill-tag">Docker</span>
-              <span class="skill-tag">Azure</span>
-              <span class="skill-tag">CMake</span>
-              <span class="skill-tag">Jenkins</span>
-            </div>
+            <h3 class="skill-cat-title">Security &amp; Supply Chain</h3>
+            <ul class="skill-tags">
+              <li class="skill-tag primary">Secure Boot</li>
+              <li class="skill-tag primary">SBOM</li>
+              <li class="skill-tag primary">Dependency-Track</li>
+              <li class="skill-tag primary">DefectDojo</li>
+              <li class="skill-tag primary">JFrog</li>
+              <li class="skill-tag">WAF</li>
+            </ul>
           </div>
         </div>
       </section>
 
-      <!-- Soft Skills -->
-      <section class="section-full soft-skills">
-        <h3 class="section-title">🤝 Soft Skills</h3>
-        <div class="skill-tags">
-          <span class="skill-tag primary">Problem-Solving</span>
-          <span class="skill-tag primary">Team Leadership</span>
-          <span class="skill-tag primary">Cross-team Collaboration</span>
-          <span class="skill-tag primary">Agile/Scrum</span>
-          <span class="skill-tag">Self-Directed Learning</span>
-          <span class="skill-tag">Open-Source Contribution</span>
-        </div>
+      <!-- ============ SOFT SKILLS ============ -->
+      <section class="section-full soft-skills" aria-labelledby="h-soft">
+        <h2 class="section-title" id="h-soft">
+          <span class="section-icon"><svg class="icon" aria-hidden="true"><use href="#i-users"/></svg></span>
+          <span>Working Style</span>
+        </h2>
+        <ul class="skill-tags">
+          <li class="skill-tag primary">Problem-Solving</li>
+          <li class="skill-tag primary">Agile / Scrum</li>
+          <li class="skill-tag primary">Self-Directed Learning</li>
+          <li class="skill-tag primary">Technical Communication</li>
+          <li class="skill-tag primary">Mentoring</li>
+          <li class="skill-tag">Team Leadership</li>
+          <li class="skill-tag">Cross-Team Collaboration</li>
+        </ul>
       </section>
 
-      <!-- Education -->
-      <section class="section-full education">
-        <h3 class="section-title">🎓 Education</h3>
+      <!-- ============ EDUCATION ============ -->
+      <section class="section-full education" aria-labelledby="h-education">
+        <h2 class="section-title" id="h-education">
+          <span class="section-icon"><svg class="icon" aria-hidden="true"><use href="#i-cap"/></svg></span>
+          <span>Education &amp; Training</span>
+        </h2>
+
         <div class="edu-grid">
-           <div class="edu">
-             <div class="edu-title">Current Studies & Certifications</div>
-             <div class="edu-org">Online (Coursera, Udemy)</div>
-             <div class="edu-date">2024 – Present</div>
-             <div class="edu-details">
-               <div class="edu-focus">Expanding expertise in digital electronics, PCB design, and ARM Cortex-M architecture.</div>
-               <div class="edu-courses">
-                 <a href="https://www.coursera.org/specializations/cortex-m-architecture-and-software-development" target="_blank" class="course-tag">Cortex-M Architecture & Software Development (Coursera)</a>
-                 <a href="https://www.udemy.com/course/digitalelectronics/learn/lecture/22087080?start=0#overview" target="_blank" class="course-tag">Digital Electronics (Udemy)</a>
-                 <a href="https://www.udemy.com/course/crash-course-electronics-and-pcb-design/learn/lecture/10511522?start=0" target="_blank" class="course-tag">Crash Course Electronics & PCB Design (Udemy)</a>
-               </div>
-             </div>
-           </div>
-          <div class="edu">
-            <div class="edu-title"><a href="https://softuni.bg/" target="_blank">Software Engineering</a></div>
-            <div class="edu-org">Software University</div>
-            <div class="edu-date">2019 – 2023</div>
+          <article class="edu">
+            <h3 class="edu-title">B.Eng. Industrial Management</h3>
+            <p class="edu-org"><a href="https://www.tu-varna.bg/" target="_blank" rel="noopener noreferrer">Technical University of Varna</a></p>
+            <p class="edu-date">2016 – 2020</p>
             <div class="edu-details">
-              <div class="edu-focus">Focus: Software Development, Cybersecurity, Electronics</div>
-              <div class="edu-courses">
-                <span class="course-tag">C++ Development</span>
-                <span class="course-tag">C# / .NET</span>
-                <span class="course-tag">SQL</span>
-                <span class="course-tag">Cybersecurity</span>
-                <span class="course-tag">Networking</span>
-                <span class="course-tag">Electronics</span>
-              </div>
-              <div class="edu-certs"><span style="font-size:8.5pt;color:var(--text-medium);margin-right:8px;">Certifications:</span>
-                <a href="https://softuni.bg/certificates/details/72733/d07037c3" target="_blank" class="cert-link">📜</a>
-                <a href="https://softuni.bg/certificates/details/76506/1525a6cd" target="_blank" class="cert-link">📜</a>
-                <a href="https://softuni.bg/certificates/details/82877/5db2e303" target="_blank" class="cert-link">📜</a>
-                <a href="https://softuni.bg/certificates/details/80036/48aea561" target="_blank" class="cert-link">📜</a>
-                <a href="https://softuni.bg/certificates/details/117516/2dcce186" target="_blank" class="cert-link">📜</a>
-                <a href="https://softuni.bg/certificates/details/22147/309145c1" target="_blank" class="cert-link">📜</a>
-                <a href="https://softuni.bg/certificates/details/118968/d6bc8181" target="_blank" class="cert-link">📜</a>
-                <a href="https://softuni.bg/certificates/details/118816/789548e8" target="_blank" class="cert-link">📜</a>
-                <a href="https://softuni.bg/certificates/details/68824/c5727019" target="_blank" class="cert-link">📜</a>
-                <a href="https://softuni.bg/certificates/details/70963/b878766c" target="_blank" class="cert-link">📜</a>
-              </div>
+              <p class="edu-focus">Bachelor of Engineering covering industrial systems, operations and engineering management.</p>
             </div>
-          </div>
+          </article>
 
-          <div class="edu">
-            <div class="edu-title">B.Eng. Industrial Management</div>
-            <div class="edu-org"><a href="https://www.tu-varna.bg/" target="_blank">Technical University of Varna</a></div>
-            <div class="edu-date">2016 – 2020</div>
+          <article class="edu edu-tall">
+            <h3 class="edu-title">Software Engineering</h3>
+            <p class="edu-org"><a href="https://softuni.bg/" target="_blank" rel="noopener noreferrer">Software University (SoftUni)</a></p>
+            <p class="edu-date">2019 – 2023</p>
             <div class="edu-details">
-              <div class="edu-focus">Engineering degree combining technical knowledge with business management principles</div>
+              <p class="edu-focus">Professional training in software development, cybersecurity, networking and electronics. Certificates below link to the issuer.</p>
+              <ul class="edu-courses">
+                <li><a href="https://softuni.bg/certificates/details/72733/d07037c3" target="_blank" rel="noopener noreferrer" class="course-tag">C++ Fundamentals</a></li>
+                <li><a href="https://softuni.bg/certificates/details/76506/1525a6cd" target="_blank" rel="noopener noreferrer" class="course-tag">C++ Advanced</a></li>
+                <li><a href="https://softuni.bg/certificates/details/68824/c5727019" target="_blank" rel="noopener noreferrer" class="course-tag">Microcontrollers</a></li>
+                <li><a href="https://softuni.bg/certificates/details/80036/48aea561" target="_blank" rel="noopener noreferrer" class="course-tag">C# Fundamentals</a></li>
+                <li><a href="https://softuni.bg/certificates/details/82877/5db2e303" target="_blank" rel="noopener noreferrer" class="course-tag">MS SQL Server</a></li>
+                <li><a href="https://softuni.bg/certificates/details/117516/2dcce186" target="_blank" rel="noopener noreferrer" class="course-tag">Information Security Management</a></li>
+                <li><a href="https://softuni.bg/certificates/details/22147/309145c1" target="_blank" rel="noopener noreferrer" class="course-tag">Network Security</a></li>
+                <li><a href="https://softuni.bg/certificates/details/118968/d6bc8181" target="_blank" rel="noopener noreferrer" class="course-tag">Computer Networking</a></li>
+                <li><a href="https://softuni.bg/certificates/details/118816/789548e8" target="_blank" rel="noopener noreferrer" class="course-tag">Windows System Administration</a></li>
+                <li><a href="https://softuni.bg/certificates/details/70963/b878766c" target="_blank" rel="noopener noreferrer" class="course-tag">Smart Home Automation</a></li>
+              </ul>
             </div>
-          </div>
+          </article>
+
+          <article class="edu">
+            <h3 class="edu-title">Continuing Professional Development</h3>
+            <p class="edu-org">Coursera · Udemy</p>
+            <p class="edu-date">2024 – Present</p>
+            <div class="edu-details">
+              <p class="edu-focus">Deepening hardware expertise alongside firmware work - VHDL for FPGA and ASIC design, ARM Cortex-M architecture, digital electronics and PCB design.</p>
+              <ul class="edu-courses">
+                <li><a href="https://www.udemy.com/course/introduction-to-vhdl-for-fpga-and-asic-design/" target="_blank" rel="noopener noreferrer" class="course-tag">VHDL for FPGA &amp; ASIC Design</a></li>
+                <li><a href="https://www.coursera.org/specializations/cortex-m-architecture-and-software-development" target="_blank" rel="noopener noreferrer" class="course-tag">Cortex-M Architecture &amp; Software Development</a></li>
+                <li><a href="https://www.udemy.com/course/digitalelectronics/" target="_blank" rel="noopener noreferrer" class="course-tag">Digital Electronics</a></li>
+                <li><a href="https://www.udemy.com/course/crash-course-electronics-and-pcb-design/" target="_blank" rel="noopener noreferrer" class="course-tag">Electronics &amp; PCB Design</a></li>
+              </ul>
+            </div>
+          </article>
         </div>
       </section>
 
-      <!-- Personal Projects -->
-      <section class="section-full projects">
-        <h3 class="section-title">🚀 Personal Projects</h3>
+      <!-- ============ PROJECTS ============ -->
+      <section class="section-full projects" aria-labelledby="h-projects">
+        <h2 class="section-title" id="h-projects">
+          <span class="section-icon"><svg class="icon" aria-hidden="true"><use href="#i-package"/></svg></span>
+          <span>Selected Projects</span>
+        </h2>
+
         <div class="projects-grid">
-            <div class="project">
+          <article class="project featured">
+            <img class="project-photo" src="ringy.jpg" width="928" height="1152" loading="lazy" alt="Two RiNGY smart school-bell wall units, one grey and one black, mounted side by side">
+            <div class="project-body">
               <div class="project-header">
-                <div class="project-title">ESP32 School Bell
-                  <a href="https://github.com/MladenNikolow/esp32_school_bell" target="_blank" class="icon-link" title="GitHub Repo" style="margin-left:8px;vertical-align:middle;">
-                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" class="icon-img" style="width:16px;height:16px;filter:none;">
-                  </a>
-                </div>
-                <div class="project-date">2024 – Present</div>
+                <h3 class="project-title">RiNGY - Smart School Bell</h3>
+                <p class="project-date">2024 – Present</p>
               </div>
-              <div class="project-desc">Automated school bell system built on ESP32-S3 with touch LCD and web-based React interface. Supports flexible scheduling, local and remote configuration, WiFi AP/STA, manual override, and persistent storage. Designed for educational institutions.</div>
-              <div class="tech-stack">ESP32-S3 · FreeRTOS · C · React · WebServer · REST API · Touch LCD</div>
+              <p class="project-desc">
+                A commercial automatic school-bell system I designed, built and shipped as a complete product -
+                ESP32 firmware, a 4.3″ colour touchscreen and a React web console. In daily use at two schools in Varna.
+              </p>
+              <ul class="project-highlights">
+                <li><strong>Dual control:</strong> PIN-locked on-device UI for daily actions (test ring, day off, panic), plus full configuration from any phone or PC on the school network over HTTPS</li>
+                <li><strong>Scheduling engine:</strong> weekday maps, reusable templates, date exceptions, auto-generated class timetables and Bulgarian public-holiday import</li>
+                <li><strong>Field reliability:</strong> NTP with CR927 clock-battery holdover across power cuts, bilingual BG/EN, signed OTA updates, and separate school and installer accounts</li>
+              </ul>
+              <p class="tech-stack">ESP32 · 4.3″ Touch LCD · FreeRTOS · C · React · REST API · HTTPS · Signed OTA</p>
             </div>
+          </article>
 
-            <div class="project">
-              <div class="project-header">
-                <div class="project-title">Smart Bench NSpot
-                  <a href="https://www1.tu-varna.bg/tu-varna/index.php/novini/1115-2018-11-19-08-33-27" target="_blank" class="icon-link" title="Project website" style="margin-left:8px;vertical-align:middle;">
-                    <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/globe.svg" alt="Website" class="icon-img" style="width:16px;height:16px;filter:none;">
-                  </a>
-                </div>
-              </div>
-              <div class="project-desc">Award-winning IoT smart bench developed for Varna municipality. Features solar power, Raspberry Pi, Wi‑Fi, USB charging, and real-time environmental monitoring. Recognized for innovation in smart city solutions. <a href="https://www1.tu-varna.bg/tu-varna/index.php/novini/1115-2018-11-19-08-33-27" target="_blank">Read more</a></div>
-              <div class="tech-stack">Raspberry Pi · IoT · Hardware · Solar · Sensors</div>
+          <article class="project">
+            <div class="project-header">
+              <h3 class="project-title">Smart Bench NSpot</h3>
+              <p class="project-date">2018</p>
             </div>
+            <p class="project-links">
+              <a href="https://www1.tu-varna.bg/tu-varna/index.php/novini/1115-2018-11-19-08-33-27" target="_blank" rel="noopener noreferrer" class="icon-link">
+                <svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg><span>Press</span>
+              </a>
+            </p>
+            <p class="project-desc">Municipality-funded IoT smart bench installed in Varna's Sea Garden. Solar-hybrid power, Raspberry Pi control, USB charging, a public display and planned Wi-Fi access, as a smart-city prototype.</p>
+            <p class="tech-stack">Raspberry Pi · Solar · Sensors · Wi-Fi · Hardware</p>
+          </article>
 
-            <div class="project">
-              <div class="project-header">
-                <div class="project-title">Domoreto
-                  <span style="display:inline-flex;align-items:center;gap:6px;margin-left:8px;">
-                    <a href="https://domoreto.azurewebsites.net/" target="_blank" class="icon-link" title="Domoreto website">
-                      <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/globe.svg" alt="Website" class="icon-img" style="width:16px;height:16px;filter:none;">
-                    </a>
-                    <a href="https://github.com/MladenNikolow/EKOLidl/" target="_blank" class="icon-link" title="GitHub Repo">
-                      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" class="icon-img" style="width:16px;height:16px;filter:none;">
-                    </a>
-                    <a href="https://ti.lidl.bg/%D0%BD%D0%B0%D0%BA%D1%80%D0%B0%D1%8F-%D1%81%D1%82%D0%B8%D0%B3%D0%B0%D0%BC-%D0%B4%D0%BE-%D0%BC%D0%BE%D1%80%D0%B5%D1%82%D0%BE/" target="_blank" class="icon-link" title="Project Info">
-                      <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/link-45deg.svg" alt="Project Info" class="icon-img" style="width:16px;height:16px;filter:none;">
-                    </a>
-                  </span>
-                </div>
-                <div class="project-date">2021 – 2022</div>
-              </div>
-              <div class="project-desc">Platform for reporting sea pollution and tracking cleanup efforts. Developed as part of the LIDL "You and Me" programme supporting environmental initiatives.</div>
-              <div class="tech-stack">.NET MVC · MSSQL · MongoDB · Azure</div>
+          <article class="project">
+            <div class="project-header">
+              <h3 class="project-title">Domoreto</h3>
+              <p class="project-date">2021 – 2022</p>
             </div>
+            <p class="project-links">
+              <a href="https://domoreto.azurewebsites.net/" target="_blank" rel="noopener noreferrer" class="icon-link">
+                <svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg><span>Site</span>
+              </a>
+              <a href="https://github.com/MladenNikolow/EKOLidl/" target="_blank" rel="noopener noreferrer" class="icon-link">
+                <svg class="icon icon-solid" aria-hidden="true"><use href="#i-github"/></svg><span>Code</span>
+              </a>
+              <a href="https://ti.lidl.bg/%D0%BD%D0%B0%D0%BA%D1%80%D0%B0%D1%8F-%D1%81%D1%82%D0%B8%D0%B3%D0%B0%D0%BC-%D0%B4%D0%BE-%D0%BC%D0%BE%D1%80%D0%B5%D1%82%D0%BE/" target="_blank" rel="noopener noreferrer" class="icon-link">
+                <svg class="icon" aria-hidden="true"><use href="#i-link"/></svg><span>About</span>
+              </a>
+            </p>
+            <p class="project-desc">Web platform for reporting marine pollution and tracking cleanup operations, built for Lidl Bulgaria's “You and Me” environmental programme.</p>
+            <p class="tech-stack">ASP.NET MVC · SQL Server · MongoDB · Azure</p>
+          </article>
 
-            <div class="project">
-              <div class="project-header">
-                <div class="project-title">Arduino UNO Moisture System
-                  <a href="https://github.com/MladenNikolow/Arduino-UNO-Moisture-System" target="_blank" class="icon-link" title="GitHub Repo" style="margin-left:8px;vertical-align:middle;">
-                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" class="icon-img" style="width:16px;height:16px;filter:none;">
-                  </a>
-                </div>
-                <div class="project-date">2020</div>
-              </div>
-              <div class="project-desc">Soil moisture monitoring system using Arduino UNO with real-time LCD display and LED indicators. Features direct register manipulation, hardware timers, interrupts, and I2C communication for efficient performance.</div>
-              <div class="tech-stack">C/C++ · Arduino · ATmega328P · I2C · ADC · Timers/Interrupts</div>
+          <article class="project">
+            <div class="project-header">
+              <h3 class="project-title">Arduino UNO Moisture System</h3>
+              <p class="project-date">2020</p>
             </div>
+            <p class="project-links">
+              <a href="https://github.com/MladenNikolow/Arduino-UNO-Moisture-System" target="_blank" rel="noopener noreferrer" class="icon-link">
+                <svg class="icon icon-solid" aria-hidden="true"><use href="#i-github"/></svg><span>Code</span>
+              </a>
+            </p>
+            <p class="project-desc">Bare-metal soil-moisture monitor on the ATmega328P, using register-level I/O, ADC sampling, hardware timers, interrupts and I²C for LCD output and LED status.</p>
+            <p class="tech-stack">C/C++ · Arduino · ATmega328P · I²C · ADC · Timers / Interrupts</p>
+          </article>
         </div>
       </section>
 
-      <!-- Languages -->
-      <section class="section-full languages">
-        <h3 class="section-title">🌍 Languages</h3>
-        <div class="languages-grid">
-          <div class="lang-item">
-            <div class="lang-name">Bulgarian</div>
+      <!-- ============ LANGUAGES ============ -->
+      <section class="section-full languages" aria-labelledby="h-languages">
+        <h2 class="section-title" id="h-languages">
+          <span class="section-icon"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg></span>
+          <span>Languages</span>
+        </h2>
+        <ul class="languages-grid">
+          <li class="lang-item">
+            <p class="lang-name">Bulgarian</p>
             <div class="lang-level">
-              <div class="level-bar full"></div>
-              <span>Native</span>
+              <span class="level-bar full" aria-hidden="true"></span>
+              <span class="lang-tag">Native</span>
             </div>
-          </div>
-          <div class="lang-item">
-            <div class="lang-name">English</div>
+          </li>
+          <li class="lang-item">
+            <p class="lang-name">English</p>
             <div class="lang-level">
-              <div class="level-bar high"></div>
-              <span>B2</span>
+              <span class="level-bar high" aria-hidden="true"></span>
+              <span class="lang-tag">B2</span>
             </div>
-          </div>
-          <div class="lang-item">
-            <div class="lang-name">Spanish</div>
+          </li>
+          <li class="lang-item">
+            <p class="lang-name">Spanish</p>
             <div class="lang-level">
-              <div class="level-bar high"></div>
-              <span>B2</span>
+              <span class="level-bar high" aria-hidden="true"></span>
+              <span class="lang-tag">B2</span>
             </div>
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
-    </div>
+
+    </main>
+
+    <footer class="page-footer">
+      <p>Mladen Nikolov · Varna, Bulgaria · <a href="mailto:mladen.nikolow@gmail.com">mladen.nikolow@gmail.com</a> · <a href="https://mladennikolow.github.io/cv/">mladennikolow.github.io/cv</a></p>
+    </footer>
+
   </div>
 </body>
 </html>
