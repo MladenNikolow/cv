@@ -31,12 +31,32 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <meta name="theme-color" content="#0f2557" />
 
-  <!-- Fonts: link (not @import) so the stylesheet can start fetching in parallel -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" />
+  <!-- Fonts: self-hosted so the PDF renders in Inter even offline or behind a
+       proxy. @font-face lives in style.css; this just starts the fetch early. -->
+  <link rel="preload" href="fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/inter-700.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="stylesheet" href="style.css" />
+
+  <script>
+    async function printResume() {
+      // Ask for every weight the stylesheet uses, then wait. fonts.ready alone
+      // only waits for loads already in flight, and a face the layout has not
+      // demanded yet is not one of them - print would fall back to Segoe UI.
+      if (document.fonts) {
+        try {
+          await Promise.all(
+            [400, 500, 600, 700, 800].map(w => document.fonts.load(w + ' 1em Inter'))
+          );
+          await document.fonts.ready;
+        } catch (e) {
+          /* Printing with the fallback beats not printing at all. */
+        }
+      }
+
+      window.print();
+    }
+  </script>
 
   <script type="application/ld+json">
   {
@@ -128,7 +148,7 @@
               <svg class="icon icon-solid" aria-hidden="true"><use href="#i-github"/></svg>
               <span>GitHub</span>
             </a>
-            <button type="button" class="print-btn" onclick="window.print()">
+            <button type="button" class="print-btn" onclick="printResume()">
               <svg class="icon" aria-hidden="true"><use href="#i-printer"/></svg>
               <span>Download PDF</span>
             </button>
