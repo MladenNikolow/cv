@@ -385,6 +385,17 @@ a.contact-item:hover {
   font-weight: 600;
 }
 
+/* Links wrap the <strong>, so let the emphasis keep owning the colour. */
+.summary a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.summary a:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 /* --------------------------------------------------------------------------
    Sections
    -------------------------------------------------------------------------- */
